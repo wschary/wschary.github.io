@@ -6,10 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人博客</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+        
+        .title {
+            background-color: rgb(63, 230, 48);
+            line-height: 60px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        div.wrap {
+            width: 960px;
+            margin: 0 auto;
+            background-color: #ccc;
+            box-shadow: 5px 5px 5px 3px #aaa;
+        }
+        
+        .bolder {
+            font-weight: 800;
+            font-size: 18px;
+        }
+        
+        .PersonInfo {
+            padding: 0 20px;
+            background-color: rgb(63, 230, 48);
+        }
+        
+        .PersonInfo-left {
+            float: left;
+        }
+        
+        .PersonInfo-right {
+            float: right;
+        }
+        
+        .clearboth {
+            clear: both;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>张敬辉</h1>
+    <div class="wrap">
+        <div class="title">
+            <h1>个人简历</h1>
+        </div>
+        <!-- 标题 -->
+        <dl class="PersonInfo">
+            <dt><h2>个人信息:</h2></dt>
+            <dd>
+                <div class="PersonInfo-left">
+                    <p><span class="bolder">姓   名：</span>张敬辉</p>
+                    <p><span class="bolder">性   别：</span>男</p>
+                    <p><span class="bolder">年   龄：</span>26</p>
+                </div>
+                <div class="PersonInfo-right">
+                    <p><span class="bolder">政治面貌：</span>团员</p>
+                    <p><span class="bolder">出生日期：</span>1993-03-01</p>
+                    <p><span class="bolder">民   族：</span>汉族</p>
+                    <p><span class="bolder">籍   贯：</span>河北省承德市围场县</p>
+                </div>
+                <div class="clearboth"></div>
+            </dd>
+        </dl>
+
+    </div>
+
 </body>
 
 </html>
